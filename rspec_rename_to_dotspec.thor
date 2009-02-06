@@ -1,8 +1,8 @@
 require 'ftools'
 
 class Rspec < Thor
-  desc "to_dotspec", "Convert your *_spec.rb files to *.spec"
-  def to_dotspec
+  desc "rename_to_dotspec", "Convert your *_spec.rb files to *.spec"
+  def rename_to_dotspec
     pattern = File.join(Dir.pwd, '**/*_spec.rb')
     puts "processing #{pattern}..."
     count = Dir.glob(pattern).each do |file|

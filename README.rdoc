@@ -12,8 +12,8 @@ You'll need Thor to use any of these.
   
 Now install the tasks using this:
 
-  $ gem install http://github.com/jqr/thor_tasks/raw/master/TASK_NAME.thor
+  $ thor install http://github.com/jqr/thor_tasks/raw/master/TASK_NAME.thor
   
 Or, here's a list of tasks for easy pasting!
 
-  $ gem install http://github.com/jqr/thor_tasks/raw/master/rspec_to_dotspec.thor
+  $ thor install http://github.com/jqr/thor_tasks/raw/master/rspec_rename_to_dotspec.thor
