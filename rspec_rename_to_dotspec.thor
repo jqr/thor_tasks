@@ -14,7 +14,7 @@ class Rspec < Thor
     STDOUT.flush
     count = Dir.glob(pattern).each do |file|
       new_file = file.gsub(/_spec.rb$/, '.spec')
-      # File.move(file, new_file)
+      File.move(file, new_file)
     end.size
     puts "#{count} files renamed."
   end
