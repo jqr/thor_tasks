@@ -1,0 +1,19 @@
+= Thor Tasks
+
+Thor is a scripting framework that replaces rake and sake.
+
+I end up using it more as a sake replacement, for system wide tasks.
+
+== Install
+
+You'll need Thor to use any of these.
+
+  $ gem install thor
+  
+Now install the tasks using this:
+
+  $ gem install http://github.com/jqr/thor_tasks/raw/master/TASK_NAME.thor
+  
+Or, here's a list of tasks for easy pasting!
+
+  $ gem install http://github.com/jqr/thor_tasks/raw/master/rspec_to_dotspec.thor
