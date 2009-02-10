@@ -13,7 +13,7 @@ class Rspec < Thor
     print "Processing #{pattern}... "
     STDOUT.flush
     count = Dir.glob(pattern).each do |file|
-      new_file = file.gsub(/_spec.rb$/, '.spec')
+      new_file = file.gsub(/_spec\.rb$/, '.spec')
       File.move(file, new_file)
     end.size
     puts "#{count} files renamed."
@@ -31,7 +31,7 @@ class Rspec < Thor
     print "Processing #{pattern}... "
     STDOUT.flush
     count = Dir.glob(pattern).each do |file|
-      new_file = file.gsub(/_spec.rb$/, '_spec.rb')
+      new_file = file.gsub(/\.spec$/, '_spec.rb')
       File.move(file, new_file)
     end.size
     puts "#{count} files renamed."
